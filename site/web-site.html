@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <link href="C:\Users\U\Desktop\Курсовой проект\site\web-site.css" rel="stylesheet" media="all">
+        <title>Кинотеатр</title>
+        <script>
+            document.getElementById("photo").onclick = function() {img()};
+                function img() {
+                    if (document.getElementById("photo").src="C:\Users\U\Desktop\Курсовой проект\photo\кинотеатр.jpg") {
+                        document.getElementById("photo").src="https://i.pinimg.com/564x/37/07/30/3707302f50ec0ed1a4a54a70334b61ad.jpg"
+                    }
+                    else {
+                        document.getElementById("photo").src="C:\Users\U\Desktop\Курсовой проект\photo\кинотеатр.jpg"
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox=" 20 20">
+                            <rect x="15" y="40" width="70" height="38" fill="white" stroke="none" />
+                            <circle cx="32" cy="25" r="17" fill="white" stroke="none" />
+                            <circle cx="68" cy="21" r="20" fill="white" stroke="none" />
+                            <circle cx="32" cy="25" r="13" fill="black" stroke="none" />
+                            <circle cx="68" cy="21" r="16" fill="black" stroke="none" />
+                            <polygon points="85,60 112,40 112,80" fill="white" />
+                          </svg>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="C:\Users\U\Desktop\Курсовой проект\site\poster.html">Афиша</a></li>
+                            <li><a href="C:\Users\U\Desktop\Курсовой проект\site\tickets.html">Билеты</a></li>
+                            <li><a href="C:\Users\U\Desktop\Курсовой проект\site\info.xml">Инфо</a></li>
+                            <li><a href="#">Вход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+                <div class="main">
+                    <div class="main_part">
+                        <img class="small" src="C:\Users\U\Desktop\Курсовой проект\photo\Holop2.jpg" alt="">
+                        <img class="big" src="C:\Users\U\Desktop\Курсовой проект\photo\MiM2.jpg" alt="">
+                        <img class="small" src="C:\Users\U\Desktop\Курсовой проект\photo\Dune2.jpg" alt="">
+                    </div>
+        
+                    <div class="poster">
+                        <h1>Афиша</h1>
+                        <h3>Сейчас в кино</h3>
+                        <div class="div_poster">
+                            <div class="photo_caption_poster">
+                                <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Кунг-фу_Панда_4.webp" alt="text-center">
+                                    <p>Кунг-фу Панда 4</p>
+                                    <button type="button" onclick="location.href='C:\Users\U\Desktop\Курсовой проект\site\tickets.html'" class="take_tick" >Купить билет</button>
+                            </div>
+                            
+                            <div class="photo_caption_poster">
+                                <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Элементарно.webp" alt="text-center">
+                                   <p>Элементарно</p>
+                                   <button type="button" onclick="location.href='C:\Users\U\Desktop\Курсовой проект\site\tickets.html'" class="take_tick">Купить билет</button>
+                            </div>
+                            
+                            <div class="photo_caption_poster">
+                                <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Fast_X.jpg" alt="text-center">
+                                    <p>Форсаж 10</p>
+                                    <button type="button" onclick="location.href='C:\Users\U\Desktop\Курсовой проект\site\tickets.html'" class="take_tick">Купить билет</button>
+                            </div>
+                            
+                            <div class="photo_caption_poster">
+                                <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Бременские_музыканты_(2024).jpg" alt="text-center">
+                                    <p>Бременские музыканты</p>
+                                    <button type="button" onclick="location.href='C:\Users\U\Desktop\Курсовой проект\site\tickets.html'" class="take_tick">Купить билет</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tickets">
+                        <h1>Билеты</h1>
+                        <div class="div_tickets">
+                            <p class="p_tickets"><img class="photo_tickets" onclick="img(this.id);" id="photo" src="C:\Users\U\Desktop\Курсовой проект\photo\кинотеатр.jpg" alt="">
+                                Заказывайте билеты, смотрите фильмы и окунитесь в мир безграничных эмоций и неповторимого киноискусства.</p>
+                                <button type="button" onclick="location.href='C:\Users\U\Desktop\Курсовой проект\site\tickets.html'" class="take_tick">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="footer">
+                    <div class="first_line">
+                        <div><a href="C:\Users\U\Desktop\Курсовой проект\site\poster.html">Афиша</a></div>
+                        <div><a href="C:\Users\U\Desktop\Курсовой проект\site\tickets.html">Билеты</a></div>
+                        <div><a href="#">Инфо</a></div>
+                        <div><a href="#">Еда и напитки</a></div>
+                    </div>
+                    <div class="second_line">
+                        <p>©2024 “Cinema”</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

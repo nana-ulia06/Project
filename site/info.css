@@ -1,0 +1,36 @@
+cinema {
+    background-color: lightgrey;
+    color: black;
+    width: auto;
+    max-height: 100%;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+name {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+movies {
+    display: flex;
+    flex-direction: column;
+}
+movie {
+    border: 2px solid black;
+    border-radius: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 10px;
+}
+title, genre, duration, schedule {
+    display: inline-flex;
+}
+title {
+    font-size: 15px;
+    font-weight: bold;
+}
