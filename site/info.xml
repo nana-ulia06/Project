@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="info.css"?>
 <cinema>
+<main_page xlink:href="C:\Users\U\Desktop\Курсовой проект\site\web-site.html#container">Главная</main_page>
     <name>Инфо</name>
     <movies>
         <movie>

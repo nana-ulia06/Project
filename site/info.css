@@ -7,6 +7,12 @@ cinema {
     margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+main_page {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
 name {
     color: black;
     font-size: 30px;
