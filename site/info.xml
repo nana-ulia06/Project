@@ -1,44 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="info.css"?>
 <cinema>
-<main_page xlink:href="C:\Users\U\Desktop\Курсовой проект\site\web-site.html#container">Главная</main_page>
     <name>Инфо</name>
     <movies>
         <movie>
             <title>Кунг-фу панда 4</title>
             <genre>Мультфильм</genre>
             <duration>94 мин</duration>
-            <schedule>
-                <showtime>15.00</showtime>
-                <room>№1</room>
-            </schedule>
+            <showtime>15.00</showtime>
+            <room>№1</room>
         </movie>
         <movie>
             <title>По Фрейду</title>
             <genre>Драма</genre>
             <duration>108 мин</duration>
-            <schedule>
-                <showtime>10.00</showtime>
-                <room>№3</room>
-            </schedule>
+            <showtime>10.00</showtime>
+            <room>№3</room>
         </movie>
         <movie>
             <title>Мятежная Луна: Дитя огня</title>
             <genre>Научная фантастика/Боевик</genre>
             <duration>134 мин</duration>
-            <schedule>
-                <showtime>17.00</showtime>
-                <room>№1</room>
-            </schedule>
+            <showtime>17.00</showtime>
+            <room>№1</room>
         </movie>
         <movie>
             <title>Сто лет тому вперёд</title>
             <genre>Научная фантастика/Приключения</genre>
             <duration>142 мин</duration>
-            <schedule>
-                <showtime>15.30</showtime>
-                <room>№2</room>
-            </schedule>
+            <showtime>15.30</showtime>
+            <room>№2</room>
         </movie>
     </movies>
 </cinema>
