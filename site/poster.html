@@ -5,7 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"  content="width=device-width, initial-scale=1.0">
         <link href="poster.css" rel="stylesheet" type="text/css"/>
+        <link href="poster_xml.css" rel="stylesheet" type="text/css"/>
         <title>Афиша</title>
+        <script>
+            function zoomIn(element) {
+            element.style.transform = "scale(1.05)";
+        }
+        function zoomOut(element) {
+            element.style.transform = "scale(1)";
+        }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -21,49 +30,80 @@
                       </svg>
                 </div>
                 <div class="nav">
-                    <ul type="none">
+                    <ul class="menu" type="none">
                         <li><a href="web-site.html">Главная</a></li>
                         <li><a href="tickets.html">Билеты</a></li>
-                        <li><a href="info.xml">Инфо</a></li>
+                        <li><a href="#">Инфо</a></li>
                         <li><a href="#">Вход</a></li>
                     </ul>
                 </div>
             </div>
 
+            <h1>Афиша</h1>
             <div class="main_part">
-                <h1>Афиша</h1>
-                <div class="div_poster">
-                    <div class="photo_caption_poster">
-                        <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Кунг-фу_Панда_4.webp" alt="text-center">
-                            <p>Кунг-фу Панда 4</p>
-                            <button type="button" onclick="location.href='tickets.html'" class="take_tick" >Купить билет</button>
-                    </div>
-                    
-                    <div class="photo_caption_poster">
-                        <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Элементарно.webp" alt="text-center">
-                           <p>Элементарно</p>
-                           <button type="button" onclick="location.href='tickets.html'" class="take_tick">Купить билет</button>
-                    </div>
-                    
-                    <div class="photo_caption_poster">
-                        <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Fast_X.jpg" alt="text-center">
-                            <p>Форсаж 10</p>
-                            <button type="button" onclick="location.href='tickets.html'" class="take_tick">Купить билет</button>
-                    </div>
-                    
-                    <div class="photo_caption_poster">
-                        <img class="photo_poster" src="C:\Users\U\Desktop\Курсовой проект\photo\Бременские_музыканты_(2024).jpg" alt="text-center">
-                            <p>Бременские музыканты</p>
-                            <button type="button" onclick="location.href='tickets.html'" class="take_tick">Купить билет</button>
-                    </div>
-                </div>
+                <xml>
+                    <?xml-stylesheet ?>
+                        <cinema id="cinema">
+                            <movies>
+                                <movie onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                    <img src="C:\Users\U\Desktop\Курсовой проект\photo\Кунг-фу_Панда_4.webp" />
+                                    <caption>
+                                        <name>Кунг-фу панда 4</name>
+                                        <genre>Мультфильм</genre>
+                                        <duration>94 мин</duration><br>
+                                    </caption><br>
+                                    <info>
+                                        В четвёртой части По и его друзьям придется пройти через ряд испытаний и обрести новые навыки, чтобы защитить свою родную землю. 
+                                        Фильм предлагает захватывающие сцены боев и юмористические моменты, которые порадуют как детей, так и взрослых зрителей.
+                                    </info>
+                                </movie>
+                                <movie onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                    <img src="C:\Users\U\Desktop\Курсовой проект\photo\freid.jpg" />
+                                    <caption>
+                                        <name>По Фрейду</name>
+                                        <genre>Драма</genre>
+                                        <duration>108 мин</duration><br>
+                                    </caption><br>
+                                    <info>
+                                        "По Фрейду" - драматический фильм, основанный на жизни и работе знаменитого австрийского психолога Зигмунда Фрейда. 
+                                        Фильм рассказывает о его исследованиях в области психоанализа, сталкиваясь с противодействием консервативного общества и собственными личными демонами. 
+                                    </info>
+                                </movie>
+                                <movie onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                    <img src="C:\Users\U\Desktop\Курсовой проект\photo\rebel_moon.jpg" />
+                                    <caption>
+                                        <name>Мятежная Луна: Дитя огня</name>
+                                        <genre>Научная фантастика/Боевик</genre>
+                                        <duration>134 мин</duration><br>
+                                    </caption><br>
+                                    <info>
+                                        "Мятежная луна: Дитя огня" - это фантастический фильм, который является продолжением эпической космической саги. 
+                                        В фильме рассказывается история группы героев, сражающихся за свободу и справедливость в галактике. 
+                                        Главный герой - юный воин, обладающий уникальными способностями огня. 
+                                    </info>
+                                </movie>
+                                <movie onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                    <img src="C:\Users\U\Desktop\Курсовой проект\photo\100Let.jpg" />
+                                    <caption>
+                                        <name>Сто лет тому вперёд</name>
+                                        <genre>Научная фантастика/Приключения</genre>
+                                        <duration>142 мин</duration><br>
+                                    </caption>
+                                    <info>
+                                        "Сто лет тому вперед" - фильм, описывающий историю главного героя, который оказывается в будущем на сто лет вперед. 
+                                        В этом мире он сталкивается с передовыми технологиями, измененным обществом и новыми вызовами, а также пытается найти способ вернуться в своё время.
+                                    </info>
+                                </movie>
+                            </movies>
+                        </cinema>
+                </xml>
             </div>
 
             <div class="footer">
                 <div class="first_line">
                     <div><a href="web-site.html">Главная</a></div>
                     <div><a href="tickets.html">Билеты</a></div>
-                    <div><a href="info.xml">Инфо</a></div>
+                    <div><a href="#">Инфо</a></div>
                     <div><a href="#">Еда и напитки</a></div>
                 </div>
                 <div class="second_line">

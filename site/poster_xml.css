@@ -1,0 +1,153 @@
+.main_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+cinema {
+    background-color: lightgrey;
+    color: black;
+    width: auto;
+    max-height: 100%;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+movies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img {
+    float: top;
+    padding: 10px;
+    border-radius: 30px;
+    height: auto;
+    max-width: 220px;
+    padding-left: 25px;
+}
+movie {
+    border-radius: 30px;
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 17px;
+    padding: 10px;
+    text-align: center;
+}
+name, genre, duration, info {
+    display: inline;
+    flex-direction: row;
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+}
+name {
+    font-weight: bold;
+    font-size: 20px;
+}
+caption, info {
+    max-width: 250px;
+}
+info {
+    text-align: justify;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid 2px black;
+    background-color: black;
+    height: auto;
+    font-size: 20px;
+  }
+  svg {
+    height: 100%;
+  }
+  .nav {
+    margin-top: 30px;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    margin-left: 20px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+  @media (max-width: 710px) {
+    .header {
+      flex-direction: column;
+    }
+    .menu  {
+      justify-content: center;
+      font-size: 17px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 460px) {
+    .header {
+      flex-direction: column;
+    }
+    .menu  {
+      justify-content: center;
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 400px) {
+    .header {
+      flex-direction: column;
+    }
+    .menu  {
+      justify-content: center;
+      flex-direction: column;
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer {
+    display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      margin-left: -10px;
+      margin-right: -10px;
+      background-color: black;
+      color: white;
+      max-width: 100%;
+      height: auto;
+      font-size: 25px;
+      padding: 10px;
+  }
+  .first_line {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .second_line {
+    padding-left: 50px;
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+    .first_line {
+      flex-direction: column;
+      text-align: center;
+    }
+    .second_line {
+      text-align: center;
+      padding-left: 0px;
+    }
+  }
